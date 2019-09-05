@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Settings</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+            <div class="content">
+                <div class="navbar">
+                    <a href="index.php" ><img id="logo" src="logo.png"></a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="index.php" >Home</a>
+                                <a href="profile.html" >My Profile</a>
+                                <a href="settings.html" >My settings</a>
+                                <a href="help.html" >Give me Help</a>
+                                <a href="login.php" >Log Out</a>
+                            </div>
+                    </div>
+                </div>
+                <script>
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    window.onclick = function(e) {
+                        if (!e.target.matches('.dropbtn')) {
+                            var myDropdown = document.getElementById("myDropdown");
+                            if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                    }
+                </script>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12" id="settings">
+                                <br>
+                                <h6>Password Change</h6>    
+                                <p>To Change Password Click <a href="changePassword.html">Here</a></p><br>
+                                <h6>Privacy Statements</h6>
+                                <p>To view Privacy Settings Click <a href="privacy.html">Here</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+    
+    
+                <div class="footer">
+                    <div class="footerTXT">
+                        <ul>
+                            <li><a href="contactUs.html">Contact Us</a></li>
+                            <li>|</li>
+                            <li><a href="aboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
